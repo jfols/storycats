@@ -16,7 +16,7 @@ Template.footer.helpers({
   randMeowMessage: function() {
     var messages = ["Tell me a story. Meow.",
                     "Feed me words. Meow.",
-                    "Build me a word salad. Meow.",
+                    "Bake me a word salad. Meow.",
                     "Storify me right meow",
                     "Stop clicking refresh. Meow.",
                     "Feed me. Meow.",
