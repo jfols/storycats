@@ -23,7 +23,8 @@ Template.footer.helpers({
                     "Is it finished yet? Meow.",
                     "Sir are tou aware tou are a cat?",
                     "Mew",
-                    "Sit down, let me tell you a story, I ate your hamster this morning"];
+                    "Sit down, let me tell you a story, I ate your hamster this morning",
+                    "Do you have a test for that? Meow."];
     var size = randMeowInt(messages.length);
     var msg = messages[size];
     return msg;
