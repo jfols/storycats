@@ -1,34 +1,34 @@
-Games = new Meteor.Collection('games', 
-                              { schema: {
-                                name: {
-                                  type: String,
-                                  min: 5,
-                                  max: 100
-                                },
-                                players: {
-                                  type: [String],
-                                  max: 24,
-                                  optional: true
-                                },
-                                isActive: {
-                                  type: Boolean,
-                                  optional: true
-                                },
-                                prompt: {
-                                  type: String,
-                                  label: 'The prompt to start the story'
-                                },
-                                text: {
-                                  type: String,
-                                  optional: true,
-                                  autoValue: function () { 
-                                    if (this.isInsert) {
-                                      return ''; 
-                                    }
-                                  }
-                                }
-                              }
-                              });
+Games = new Meteor.Collection('games', { 
+  schema: {
+    name: {
+      type: String,
+      min: 5,
+      max: 100
+    },
+    players: {
+      type: [String],
+      max: 24,
+      optional: true
+    },
+    isActive: {
+      type: Boolean,
+      optional: true
+    },
+    prompt: {
+      type: String,
+      label: 'The prompt to start the story'
+    },
+    text: {
+      type: String,
+      optional: true,
+      autoValue: function () { 
+        if (this.isInsert) {
+          return ''; 
+        }
+      }
+    }
+  }
+});
 Games.allow({
   insert: function(userId, doc){
     return true; //can.createGame(userId);
@@ -58,5 +58,5 @@ if (Meteor.isClient) {
         }
       }
     });
-  })
+  });
 }

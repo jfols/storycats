@@ -22,7 +22,7 @@ Router.before(filters.myFilter, {only: ['items']});
 
 Router.map(function() {
 
-  this.route('homepage', {
+  this.route('home', {
     path: '/'
   });
 
