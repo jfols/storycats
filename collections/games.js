@@ -52,7 +52,7 @@ if (Meteor.isClient) {
             alertMessage('Oh shit:'+error.details, 'danger');
           }
           else {
-            Router.go('gameRoom', { _id: result });
+            Router.go('game', { _id: result });
             alertMessage('Woot, such game', 'success');
           }
         }
