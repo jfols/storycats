@@ -1,5 +1,5 @@
 <template name='gameCreate'>   
-  {{#autoForm schema="Games" id="gameCreateForm"}}
+  {{#autoForm schema=gamesCollection id="gameCreateForm"}}
     {{afQuickField 'name'}}
     {{afQuickField 'prompt'}}
     <button type='submit' class='btn btn-primary insert'>Create Game</button>
