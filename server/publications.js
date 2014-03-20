@@ -1,19 +1,13 @@
-/* ---------------------------------------------------- +/
-
-## Publications ##
-
-All publications-related code. 
-
-/+ ---------------------------------------------------- */
+/* publications */
 
 // Publish all items
 
-Meteor.publish('allItems', function() {
-  return Items.find();
+Meteor.publish('games', function() {
+  return Games.find();
 });
 
 // Publish a single item
 
-Meteor.publish('singleItem', function(id) {
-  return Items.find(id);
+Meteor.publish('singleGame', function(id) {
+  return Games.find(id);
 });

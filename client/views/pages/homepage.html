@@ -1,3 +1,8 @@
 <template name="homepage">
-  <h2>Welcome to being John Malkovich!</h2>
+  <h2>Welcome to being Mr. Malcolm!</h2>
+  {{#if currentUser}}
+  <a href='{{pathFor "gameCreate"}}'>
+    <button class='btn btn-lg btn-primary'>Create game!</button>
+  </a>
+  {{/if}}
 </template>
